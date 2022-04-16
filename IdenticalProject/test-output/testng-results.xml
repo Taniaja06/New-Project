@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-12T12:13:41 EDT" name="Suite1" finished-at="2022-04-12T12:13:42 EDT" duration-ms="657">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.my.runner.MyRunner@169e6180]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-04-12T12:13:41 EDT" name="Nopackage" finished-at="2022-04-12T12:13:42 EDT" duration-ms="657">
+      <class name="com.my.runner.MyRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.my.runner.MyRunner@169e6180]" started-at="2022-04-12T12:13:41 EDT" name="setUpClass" finished-at="2022-04-12T12:13:42 EDT" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.my.runner.MyRunner@169e6180]" started-at="2022-04-12T12:13:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-12T12:13:42 EDT" duration-ms="195" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User able to login the application & verfy the users information"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[User able use zoopla application, login the application, searching the property, buy the property]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver is not executable: /Users/hhh/eclipse-workspace/IdenticalProject/./Drivers/chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver is not executable: /Users/hhh/eclipse-workspace/IdenticalProject/./Drivers/chromedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:150)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at step.definitions.LoginStepDef.user_able_to_open_a_any_browser(LoginStepDef.java:17)
+at ✽.User able to open a any browser(file:///Users/hhh/eclipse-workspace/IdenticalProject/./Features/SetsOFData.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.my.runner.MyRunner@169e6180]" started-at="2022-04-12T12:13:42 EDT" name="tearDownClass" finished-at="2022-04-12T12:13:42 EDT" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.my.runner.MyRunner -->
+    </test> <!-- Nopackage -->
+  </suite> <!-- Suite1 -->
+</testng-results>
